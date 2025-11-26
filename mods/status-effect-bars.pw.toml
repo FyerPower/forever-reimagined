@@ -1,0 +1,13 @@
+name = "Status Effect Bars"
+filename = "status-effect-bars-1.0.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "62a07c4d9dc8329a663af5ed66b47af8dbdc864d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6679490
+project-id = 615459

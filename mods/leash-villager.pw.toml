@@ -1,0 +1,13 @@
+name = "Leash Villager"
+filename = "leash-villager-1.0.0+mc1.21.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c85eb0889c4b59d220bf34efbb26d758e0621f90"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7099182
+project-id = 1363801

@@ -1,0 +1,13 @@
+name = "Just Enough Professions (JEP)"
+filename = "JustEnoughProfessions-fabric-1.21.10-9.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "554f9bfa9c0fa40cf1de395d4fa2e1819504ed2e"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7226513
+project-id = 417645

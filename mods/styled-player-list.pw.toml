@@ -1,0 +1,13 @@
+name = "Styled Player List"
+filename = "styledplayerlist-3.9.0+1.21.9.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "ee9348acdf381d144d38a8dba9d0db5ecd543277"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7048264
+project-id = 442282

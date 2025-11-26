@@ -1,0 +1,13 @@
+name = "FyerPower's Community Vanilla+"
+author = "FyerPower"
+version = "1.0.0"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "b73eecfb5306b482919d533625495c99a418e0802e2aa6d1cc6247ccf480de0c"
+
+[versions]
+fabric = "0.18.1"
+minecraft = "1.21.10"

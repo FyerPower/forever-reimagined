@@ -1,0 +1,13 @@
+name = "VeinMine"
+filename = "veinmine-1.3.3+1.21.9-1.21.10.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/jjXSQOGX/versions/xEepp9pX/veinmine-1.3.3%2B1.21.9-1.21.10.jar"
+hash-format = "sha512"
+hash = "d45e4633da4d022db9eb9f6669fc3a80fda49999a4b7f6550091acac574ac19c3bb6830cef29dbc36dedd5e3ac2e4967eb1815ee01f4928c08b320f0fc0170e4"
+
+[update]
+[update.modrinth]
+mod-id = "jjXSQOGX"
+version = "xEepp9pX"

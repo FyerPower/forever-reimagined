@@ -1,0 +1,13 @@
+name = "Mod Menu - Community Updated"
+filename = "modmenu-v16.0.0-1.21.9-1.21.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4ff912d1ed86f8ab1a6046ecafb71c0787d57831"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7101668
+project-id = 1319604
