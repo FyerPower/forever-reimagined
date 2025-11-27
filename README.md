@@ -1,78 +1,70 @@
-# Modpack Forever Vanilla
+# FyerPower's Community Vanilla+ Modpack
 
 A curated Minecraft modpack focused on enhancing the vanilla experience while maintaining the core gameplay feel.
 
-## Prerequisites
+##  Setup
 
 Before getting started, make sure you have the following installed:
 
+- Git
 - [Go](https://golang.org/dl/) (for packwiz)
-- Git (for version control)
+- [Packwiz](https://packwiz.infra.link/)
 
-### Installing packwiz
+Install by running the following commands:
 
-Install packwiz using Go:
+```sh
+# Update apt
+$ sudo apt update
 
-```bash
-go install github.com/packwiz/packwiz@latest
+# Install & Verify Git
+$ sudo apt install git
+$ git -v
+
+# Install & Verify Golang
+$ sudo apt install golang-go
+$ go -v
+
+# Install & Verify packwiz
+$ go install github.com/packwiz/packwiz@latest
+$ packwiz -v
 ```
 
-Or download a pre-built binary from the [packwiz releases page](https://github.com/packwiz/packwiz/releases).
+Clone the repository
 
-### Setting up the pw script (recommended)
-
-For easier use, add the included `pw` script to your PATH:
-
-```bash
-echo 'export PATH="$PATH:$HOME/projects/modpack-forever-vanilla"' >> ~/.zshrc
-source ~/.zshrc
+```sh
+# Clone Repository
+$ git clone REPO
+#
+$ cd FOLDER_NAME
 ```
 
-After setup, you can use `pw` instead of `packwiz` for all commands, and it will automatically run in the correct directory.
+Add local shell scripts into your $PATH
+
+```sh
+$ echo 'export PATH="$PATH:$(pwd)/scripts/bin"' >> ~/.zshrc
+$ source ~/.zshrc
+```
 
 ## Adding Mods
 
-### From CurseForge
+### From CurseForge / Modrinth
 
-To add a mod from CurseForge, use the following command:
+To add a mod from CurseForge or Modrinth, use the following command:
 
 ```bash
-pw curseforge add <mod-name-or-url>
+pw [curseforge|modrinth] add [URL|slug|search]
 ```
 
 Examples:
-```bash
+```sh
 # Add by mod slug (from url)
 pw curseforge add jei
-
-# Add by mod name
-pw curseforge add "JEI"
 
 # Add by CurseForge URL
 pw curseforge add https://www.curseforge.com/minecraft/mc-mods/jei
 
-# Add by project ID
-pw curseforge add 238222
-```
-
-### From Modrinth
-
-To add a mod from Modrinth, use:
-
-```bash
-pw modrinth add <mod-name-or-url>
-```
-
-Examples:
-```bash
-# Add by mod name
-pw modrinth add "sodium"
-
 # Add by Modrinth URL
-pw modrinth add https://modrinth.com/mod/sodium
-
-# Add by project ID
-pw modrinth add AANobbMI
+pw modrinth add https://modrinth.com/mod/jei
 ```
 
 ### Adding Local Mods
