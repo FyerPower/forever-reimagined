@@ -27,7 +27,7 @@ jobs:
         run: go install github.com/packwiz/packwiz@latest
 
       - name: Verify packwiz installation
-        run: packwiz --version
+        run: packwiz --help
 
       - name: Export CurseForge modpack
         run: |
