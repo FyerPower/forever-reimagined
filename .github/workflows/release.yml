@@ -17,12 +17,14 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "stable"
+          cache: false
+
       - name: Install packwiz
-        run: |
-          # Download and install packwiz
-          sudo apt update
-          sudo apt install golang-go
-          go install github.com/packwiz/packwiz@latest
+        run: go install github.com/packwiz/packwiz@latest
 
       - name: Verify packwiz installation
         run: packwiz --version
