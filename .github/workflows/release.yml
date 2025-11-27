@@ -35,11 +35,6 @@ jobs:
           packwiz curseforge export --side client --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.zip"
           packwiz curseforge export --side server --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.zip"
 
-      - name: Export Modrinth modpack
-        run: |
-          cd pack
-          packwiz modrinth export --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}.mrpack"
-
       - name: Create releases directory
         run: mkdir -p releases
 
@@ -47,7 +42,6 @@ jobs:
         run: |
           # Find and move the exported files
           find pack -name "*.zip" -type f -exec mv {} releases/ \;
-          find pack -name "*.mrpack" -type f -exec mv {} releases/ \;
 
       - name: List release files
         run: ls -la releases/
@@ -68,7 +62,6 @@ jobs:
           files: |
             ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.zip
             ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.zip
-            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}.mrpack
           body: |
             ## FyerPower's Community Vanilla+ ${{ steps.tag.outputs.tag_name }}
 
@@ -76,7 +69,6 @@ jobs:
 
             ### Download Options:
             - **CurseForge**: Download the `-client.zip` or `-server.zip` file and import it into your CurseForge launcher
-            - **Modrinth**: Download the `-client.mrpack` or `-server.mrpack` file and import it into your Modrinth launcher or other compatible launchers
 
             ### Installation:
             1. Download the appropriate file for your launcher
