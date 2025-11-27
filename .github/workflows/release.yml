@@ -32,14 +32,14 @@ jobs:
       - name: Export CurseForge modpack
         run: |
           cd pack
-          packwiz curseforge export --side client --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.zip"
-          packwiz curseforge export --side server --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.zip"
+          packwiz curseforge export --side client --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.zip"
+          packwiz curseforge export --side server --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.zip"
 
       - name: Export Modrinth modpack
         run: |
           cd pack
-          packwiz modrinth export --side client --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.mrpack"
-          packwiz modrinth export --side server --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.mrpack"
+          packwiz modrinth export --side client --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.mrpack"
+          packwiz modrinth export --side server --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.mrpack"
 
       - name: Create releases directory
         run: mkdir -p releases
