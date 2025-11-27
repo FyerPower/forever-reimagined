@@ -1,0 +1,86 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - "v*" # Trigger on version tags like v1.0.0, v2.1.3, etc.
+
+jobs:
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Required to create releases and upload assets
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install packwiz
+        run: |
+          # Download and install packwiz
+          wget -q https://github.com/packwiz/packwiz/releases/latest/download/packwiz-linux64 -O packwiz
+          chmod +x packwiz
+          sudo mv packwiz /usr/local/bin/
+
+      - name: Verify packwiz installation
+        run: packwiz --version
+
+      - name: Export CurseForge modpack
+        run: |
+          cd pack
+          packwiz curseforge export --side client --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.zip"
+          packwiz curseforge export --side server --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.zip"
+
+      - name: Export Modrinth modpack
+        run: |
+          cd pack
+          packwiz modrinth export --side client --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.mrpack"
+          packwiz modrinth export --side server --output-filename="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.mrpack"
+
+      - name: Create releases directory
+        run: mkdir -p releases
+
+      - name: Move exported files to releases directory
+        run: |
+          # Find and move the exported files
+          find pack -name "*.zip" -type f -exec mv {} releases/ \;
+          find pack -name "*.mrpack" -type f -exec mv {} releases/ \;
+
+      - name: List release files
+        run: ls -la releases/
+
+      - name: Extract tag name
+        id: tag
+        run: echo "tag_name=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag.outputs.tag_name }}
+          name: "FyerPower's Community Vanilla+ ${{ steps.tag.outputs.tag_name }}"
+          draft: false
+          prerelease: false
+          files: |
+            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.zip
+            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.zip
+            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.mrpack
+            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.mrpack
+          body: |
+            ## FyerPower's Community Vanilla+ ${{ steps.tag.outputs.tag_name }}
+
+            This release includes modpack exports for both CurseForge and Modrinth platforms.
+
+            ### Download Options:
+            - **CurseForge**: Download the `-client.zip` or `-server.zip` file and import it into your CurseForge launcher
+            - **Modrinth**: Download the `-client.mrpack` or `-server.mrpack` file and import it into your Modrinth launcher or other compatible launchers
+
+            ### Installation:
+            1. Download the appropriate file for your launcher
+            2. Import the modpack using your launcher's import feature
+            3. Launch and enjoy!
+
+            For more information, see the [README](https://github.com/${{ github.repository }}/blob/main/README.md).
