@@ -38,8 +38,7 @@ jobs:
       - name: Export Modrinth modpack
         run: |
           cd pack
-          packwiz modrinth export --side client --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-client.mrpack"
-          packwiz modrinth export --side server --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}-server.mrpack"
+          packwiz modrinth export --output="fyerpowers-community-vanillaplus-modpack-${GITHUB_REF#refs/tags/}.mrpack"
 
       - name: Create releases directory
         run: mkdir -p releases
@@ -69,8 +68,7 @@ jobs:
           files: |
             ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.zip
             ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.zip
-            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-client.mrpack
-            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}-server.mrpack
+            ./releases/fyerpowers-community-vanillaplus-modpack-${{ steps.tag.outputs.tag_name }}.mrpack
           body: |
             ## FyerPower's Community Vanilla+ ${{ steps.tag.outputs.tag_name }}
 
