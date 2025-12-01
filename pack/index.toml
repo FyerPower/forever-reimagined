@@ -81,11 +81,6 @@ hash = "10916b552d45d65fbf872a5649c4d767cba25700b01e19918de0c0ae7962ba1c"
 metafile = true
 
 [[files]]
-file = "mods/entityculling.pw.toml"
-hash = "5443c56a46d7fca84a1f96dc58315951a24cf8954f059aa35f213f28214d468d"
-metafile = true
-
-[[files]]
 file = "mods/explorers-compass.pw.toml"
 hash = "c36bcf2e02738630862e87a668b2b0473ab00de00d3c397acbb47c76dae9bf98"
 metafile = true
@@ -198,11 +193,6 @@ metafile = true
 [[files]]
 file = "mods/mod-menu-community-updated.pw.toml"
 hash = "cfae0c322b99763bc7b7c77db52895dde8848ccbda20d3b12306e04d4af69b84"
-metafile = true
-
-[[files]]
-file = "mods/moreculling.pw.toml"
-hash = "204a4b3b041fad4bb4dc543c74d540fcf239710494d2130cebe700bf1d8a7805"
 metafile = true
 
 [[files]]
