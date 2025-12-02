@@ -1,4 +1,4 @@
-# FyerPower's Vanilla+ Modpack
+# Forever - Reimagined
 
 A light, polished Vanilla+ modpack built exclusively for FyerPower’s Community Server.
 
@@ -8,7 +8,7 @@ Uploaded to CurseForge for easy installation and updates for all community membe
 
 ## Version & Update Plan
 
-Currently built for Minecraft 1.21.1, with long-term plans to keep the pack updated across future Minecraft releases. All included mods are chosen carefully to avoid major world-breaking changes and to remain compatible as updates roll out.
+Currently built for Minecraft 1.21.10, with long-term plans to keep the pack updated across future Minecraft releases. All included mods are chosen carefully to avoid major world-breaking changes and to remain compatible as updates roll out.
 
 ## Mod Philosophy
 
