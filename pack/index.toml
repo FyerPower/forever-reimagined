@@ -127,7 +127,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "38f25e6215fc0d671cd0e3369bce9a594c68e5b0eddb89d5e033bd8c22b3b746"
+hash = "63118a1b4eed5ad939d4f6b62c87fe0dfa4d586769271d8f701dcb43d25f927a"
 metafile = true
 
 [[files]]
@@ -227,7 +227,7 @@ metafile = true
 
 [[files]]
 file = "mods/puzzles-lib.pw.toml"
-hash = "ef2b82c34e5432c84b446bc8ad01ea487309ca259cc45420dd9da032023caccb"
+hash = "4478b3a42925deadb386d54a10a37207d76dc6d6b5bb90e764e5a40f94bdb80f"
 metafile = true
 
 [[files]]
@@ -297,7 +297,7 @@ metafile = true
 
 [[files]]
 file = "mods/toms-storage-fabric.pw.toml"
-hash = "5f82576fafce6528fb6501d78d22ee4fecca2beba743a172571e3bbf98c95f56"
+hash = "41e613e0cea2c2ce05e05e991dd1af30a86b65c6120db8b92bd9ddeb6d71bd9f"
 metafile = true
 
 [[files]]
