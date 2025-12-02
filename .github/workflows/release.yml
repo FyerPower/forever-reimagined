@@ -42,9 +42,24 @@ jobs:
         run: |
           # Update the version field in pack/pack.toml
           VERSION="${{ steps.version.outputs.version }}"
+          
+          # Validate pack.toml exists
+          if [ ! -f pack/pack.toml ]; then
+            echo "Error: pack/pack.toml not found"
+            exit 1
+          fi
+          
+          # Update version in pack.toml
           sed -i "s/^version = \".*\"/version = \"$VERSION\"/" pack/pack.toml
+          
+          # Verify the update was successful
+          if ! grep -q "^version = \"$VERSION\"" pack/pack.toml; then
+            echo "Error: Failed to update version in pack.toml"
+            exit 1
+          fi
+          
           echo "Updated pack.toml version to $VERSION"
-          cat pack/pack.toml | grep "^version"
+          grep "^version" pack/pack.toml
 
       - name: Export CurseForge modpack
         run: |
