@@ -45,7 +45,7 @@ jobs:
           
           # Validate pack.toml exists
           if [ ! -f pack/pack.toml ]; then
-            echo "Error: pack/pack.toml not found"
+            echo "Error: pack/pack.toml not found in $(pwd)"
             exit 1
           fi
           
@@ -54,7 +54,7 @@ jobs:
           
           # Verify the update was successful
           if ! grep -q "^version = \"$VERSION\"" pack/pack.toml; then
-            echo "Error: Failed to update version in pack.toml"
+            echo "Error: Failed to update version to \"$VERSION\" in pack.toml"
             exit 1
           fi
           
