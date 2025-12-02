@@ -42,29 +42,29 @@ jobs:
         run: |
           # Update the version field in pack/pack.toml
           VERSION="${{ steps.version.outputs.version }}"
-          
+
           # Validate pack.toml exists
           if [ ! -f pack/pack.toml ]; then
             echo "Error: pack/pack.toml not found in $(pwd)"
             exit 1
           fi
-          
+
           # Update version in pack.toml using @ as delimiter to avoid issues with / in version
           sed -i "s@^version = \".*\"@version = \"$VERSION\"@" pack/pack.toml
-          
+
           # Verify the update was successful using literal string matching
           if ! grep -F "version = \"$VERSION\"" pack/pack.toml > /dev/null; then
             echo "Error: Failed to update version to \"$VERSION\" in pack.toml"
             exit 1
           fi
-          
+
           echo "Updated pack.toml version to $VERSION"
           grep "^version" pack/pack.toml
 
       - name: Export CurseForge modpack
         run: |
           cd pack
-          packwiz curseforge export --side client --output="forever-reimagined-${GITHUB_REF#refs/tags/}-client.zip"
+          packwiz curseforge export --side client --output="forever-reimagined-${GITHUB_REF#refs/tags/}.zip"
           packwiz curseforge export --side server --output="forever-reimagined-${GITHUB_REF#refs/tags/}-server.zip"
 
       - name: Create releases directory
@@ -92,17 +92,22 @@ jobs:
           draft: false
           prerelease: false
           files: |
-            ./releases/forever-reimagined-${{ steps.tag.outputs.tag_name }}-client.zip
+            ./releases/forever-reimagined-${{ steps.tag.outputs.tag_name }}.zip
             ./releases/forever-reimagined-${{ steps.tag.outputs.tag_name }}-server.zip
           body: |
-            ## FyerPower's Vanilla+ Modpack ${{ steps.tag.outputs.tag_name }}
+            ## Forever - Reimagined Modpack ${{ steps.tag.outputs.tag_name }}
 
-            This release includes modpack exports for the CurseForge platform.
+            This release includes modpack exports for the CurseForge platform (both client and server versions).
 
-            ### Download Options:
-            - **CurseForge**: Download the `-client.zip` or `-server.zip` file and import it into your CurseForge launcher
+            ### Installation (CurseForge Launcher):
+            *(Once published on CurseForge)*
+            1. Open the CurseForge launcher
+            2. Navigate to the "Modpacks" section
+            3. Search for "Forever - Reimagined"
+            4. Click "Install" to add the modpack to your library
+            5. Launch and enjoy!
 
-            ### Installation:
+            ### Installation (Import):
             1. Download the appropriate file for your launcher
             2. Import the modpack using your launcher's import feature
             3. Launch and enjoy!
