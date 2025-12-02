@@ -49,11 +49,11 @@ jobs:
             exit 1
           fi
           
-          # Update version in pack.toml
-          sed -i "s/^version = \".*\"/version = \"$VERSION\"/" pack/pack.toml
+          # Update version in pack.toml using @ as delimiter to avoid issues with / in version
+          sed -i "s@^version = \".*\"@version = \"$VERSION\"@" pack/pack.toml
           
-          # Verify the update was successful
-          if ! grep -q "^version = \"$VERSION\"" pack/pack.toml; then
+          # Verify the update was successful using literal string matching
+          if ! grep -F "version = \"$VERSION\"" pack/pack.toml > /dev/null; then
             echo "Error: Failed to update version to \"$VERSION\" in pack.toml"
             exit 1
           fi
