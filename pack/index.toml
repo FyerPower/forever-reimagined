@@ -316,6 +316,11 @@ hash = "9e5c8eed53af26e1eaa584599174e0ace1609a1601332b9a8ff635c2fcec8229"
 metafile = true
 
 [[files]]
+file = "mods/trashslot.pw.toml"
+hash = "639b8f07280c194ed9cf22160ce1d4b2a4b67f15f28a7d346e6a4ebaa8bbaefd"
+metafile = true
+
+[[files]]
 file = "mods/travelers-backpack-fabric.pw.toml"
 hash = "809e6fa136a6c425f14f27b1e467b4c66db1e7558dcdc4967121a4e431cf0c23"
 metafile = true
