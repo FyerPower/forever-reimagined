@@ -4,15 +4,14 @@ This document contains a comprehensive list of all mods included in the Forever 
 
 ---
 
-## Big Mods
+## Core Mods
 *Mods that add significant new content, blocks, or items to the game*
 
 - **Lootr (Fabric)** - Makes dungeon and structure loot chests unique per player, preventing griefing and ensuring everyone gets their own loot.
 - **Magnum Torch** - Adds a special torch that prevents mob spawning in a large radius around it.
 - **Open Parties and Claims** - Comprehensive land claiming and party system for multiplayer servers, allowing players to protect their builds and team up.
 - **Tom's Simple Storage Mod (Fabric)** - Adds a simple and intuitive storage network system with terminals, connectors, and inventory management.
-- **Traveler's Backpack [Fabric]** - Adds wearable backpacks with built-in crafting table, fluid storage, and tool slots for portable storage.
-- **Universal Graves** - Creates graves when players die, storing all items safely and preventing item loss.
+- **Traveler's Backpack (Fabric)** - Adds wearable backpacks with built-in crafting table, fluid storage, and tool slots for portable storage.
 - **Waystones** - Adds placeable waystone blocks that allow fast travel between discovered locations.
 - **Xaero's Minimap** - Adds a highly customizable minimap to the game with waypoints, death points, and entity tracking.
 - **Xaero's World Map** - Adds a full-screen world map that integrates with Xaero's Minimap for exploration tracking.
@@ -31,7 +30,7 @@ This document contains a comprehensive list of all mods included in the Forever 
 - **Clumps** - Groups experience orbs together to reduce lag and make collection more efficient.
 - **Durability Tooltip** - Shows item durability as a number in tooltips for precise tracking.
 - **Enchantment Descriptions** - Adds helpful descriptions to enchantments explaining what they do.
-- **Explorer's Compass** - Adds a compass that helps locate structures and biomes.
+- **Explorer's Compass** - Adds a compass that helps locate structures.
 - **Item Scroller** - Adds convenient mouse controls for moving items in inventories quickly.
 - **Jade 🔍** - Shows information about blocks and entities when looking at them (formerly WAILA/HWYLA).
 - **Just Enough Items (JEI)** - Recipe viewer that shows crafting recipes, uses, and item information.
@@ -49,6 +48,7 @@ This document contains a comprehensive list of all mods included in the Forever 
 - **Styled Player List** - Improves the player list with formatting and customization options.
 - **Trade Cycling** - Allows cycling through villager trades with hotkeys for easier trading.
 - **TrashSlot** - Adds a trash can slot to inventories for quick item deletion.
+- **Universal Graves** - Creates graves when players die, storing all items safely and preventing item loss.
 - **Tweakeroo** - Collection of various tweaks and quality-of-life features (free camera, flexible block placement, etc.).
 - **VeinMine** - Allows mining entire veins of ore or chopping entire trees at once with a keybind.
 
