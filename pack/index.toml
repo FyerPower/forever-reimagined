@@ -413,6 +413,11 @@ hash = "9558758e85c4d4e25da6c62d2381e24de2794f1307136ee9b4be98ed32baf6ad"
 metafile = true
 
 [[files]]
+file = "resourcepacks/fusion-emissive-ores.pw.toml"
+hash = "034b0be4433c1a410237bfc455542a217f4f3389014b5c06704f6bb6b9b2ad54"
+metafile = true
+
+[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "9f8e443df6075210eef82f35c5f95db92c19d7b1a1267a4593fa97c079993ed6"
 metafile = true

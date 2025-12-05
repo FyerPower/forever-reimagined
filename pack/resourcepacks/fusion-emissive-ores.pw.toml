@@ -1,0 +1,13 @@
+name = "Fusion Emissive Ores"
+filename = "Fusion Emissive Ores v1.0.2 for Minecraft 1.20-1.21.8.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "05a44e3a3d29399ef81d71533e0865a169399ff7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7051087
+project-id = 1315460
