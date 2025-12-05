@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "configs/vein_mine.json"
+hash = "e4acab42680829ea1c9baa8fd9284a9209b86cbfa7bf033b1e83ffc76e692fdc"
+
+[[files]]
 file = "mods/almanac-lib.pw.toml"
 hash = "59d6b21e065b929ef80920c304d583536dab35e363acc44e8fc228387cd6f1d7"
 metafile = true
@@ -363,4 +367,9 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "6a8a09f6a8611a9d14a97dd8153bd01b9b76bb07ba924b118bb9365ec8d8a9b9"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "9f8e443df6075210eef82f35c5f95db92c19d7b1a1267a4593fa97c079993ed6"
 metafile = true
