@@ -10,7 +10,7 @@ hash = "8cb7c7053c8105f9543a6f6f8a00defd0cbf12ff20c059dc08a9dcf928f24688"
 
 [[files]]
 file = "configs/resourcepacks.json"
-hash = "be6fc2f80e7e5865dc1d4996020f34318d48c2894854ca9fa2c77c1f407b7571"
+hash = "fa92c46c1433285562c8eaa0dd22fa4730162c898eeb51b7106d5d3b43e97ce8"
 
 [[files]]
 file = "configs/styledplayerlist/config.json"
