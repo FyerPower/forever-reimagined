@@ -1,39 +1,39 @@
 hash-format = "sha256"
 
 [[files]]
-file = "configs/betterf3.json"
+file = "config/betterf3.json"
 hash = "d94ff8915d7af92e553939f764854d36e94c52436acc059a2d71ae8bc81bac50"
 
 [[files]]
-file = "configs/minihud.json"
+file = "config/minihud.json"
 hash = "8cb7c7053c8105f9543a6f6f8a00defd0cbf12ff20c059dc08a9dcf928f24688"
 
 [[files]]
-file = "configs/resourcepacks.json"
+file = "config/resourcepacks.json"
 hash = "fa92c46c1433285562c8eaa0dd22fa4730162c898eeb51b7106d5d3b43e97ce8"
 
 [[files]]
-file = "configs/styledplayerlist/config.json"
+file = "config/styledplayerlist/config.json"
 hash = "a50d1c340c6e42433e725fe7a3b97e9920bc493b47ca618ecad4998bb6af16e8"
 
 [[files]]
-file = "configs/styledplayerlist/styles/animated.json"
+file = "config/styledplayerlist/styles/animated.json"
 hash = "f2e832b4c173f5760de66f817d84277cb65ba1747bed5a63426c8a66a119b33e"
 
 [[files]]
-file = "configs/styledplayerlist/styles/default.json"
+file = "config/styledplayerlist/styles/default.json"
 hash = "22c2126769f64b42a3aeaf0696e2bb9365881901efaaf14b4b380eccbecedb42"
 
 [[files]]
-file = "configs/vein_mine.json"
+file = "config/vein_mine.json"
 hash = "e4acab42680829ea1c9baa8fd9284a9209b86cbfa7bf033b1e83ffc76e692fdc"
 
 [[files]]
-file = "configs/waystones-common.toml"
+file = "config/waystones-common.toml"
 hash = "e08eeb1fc63b1c35a8bd33545c3f4dcc71fc13f112d69073d9e3a9cf4d31df8f"
 
 [[files]]
-file = "configs/xaerominimap.txt"
+file = "config/xaerominimap.txt"
 hash = "b323c892190e9a4e870fa34117eeaa72a712e7ce1d6c7ab92e219b6d31d6e47f"
 
 [[files]]
