@@ -403,6 +403,11 @@ hash = "6a8a09f6a8611a9d14a97dd8153bd01b9b76bb07ba924b118bb9365ec8d8a9b9"
 metafile = true
 
 [[files]]
+file = "resourcepacks/fusion-connected-blocks.pw.toml"
+hash = "b5395a87ff650ccd9253568779f85deebf8186645219d4c6461f78645f03f0bd"
+metafile = true
+
+[[files]]
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "9f8e443df6075210eef82f35c5f95db92c19d7b1a1267a4593fa97c079993ed6"
 metafile = true
