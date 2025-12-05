@@ -1,0 +1,13 @@
+name = "Miniature Shader"
+filename = "miniature-shader-2.18.5.zip"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bf02795706640197d252dea5a697120d987fe79d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7216354
+project-id = 602290

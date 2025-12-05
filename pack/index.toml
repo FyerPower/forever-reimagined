@@ -378,3 +378,8 @@ metafile = true
 file = "shaderpacks/complementary-unbound.pw.toml"
 hash = "006170836f3180d229a6b95e1b33c060d7afcd0755273669faf78e86f50579ed"
 metafile = true
+
+[[files]]
+file = "shaderpacks/miniature-shader.pw.toml"
+hash = "db8a6692c585b2447adcde26e653eac4bb3fde9171b2d68c8e3388ef8a7ba7ce"
+metafile = true
