@@ -9,6 +9,10 @@ file = "configs/minihud.json"
 hash = "8cb7c7053c8105f9543a6f6f8a00defd0cbf12ff20c059dc08a9dcf928f24688"
 
 [[files]]
+file = "configs/resourcepacks.json"
+hash = "be6fc2f80e7e5865dc1d4996020f34318d48c2894854ca9fa2c77c1f407b7571"
+
+[[files]]
 file = "configs/styledplayerlist/config.json"
 hash = "a50d1c340c6e42433e725fe7a3b97e9920bc493b47ca618ecad4998bb6af16e8"
 
